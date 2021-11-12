@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Survey Form By FernandoBL(Certification freeCodeCamp)</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="center-container">
+        <header>
+            <h1 id="title">Titulo</h1>
+            <p id="description">Texto de descripcion</p>
+        </header>
+
+        <form id="survey-form" class="background-form">
+
+            <div class="div-group">
+                <label id="name-label" for="name">Name: </label>
+                <input id="name" class="input-design input-effect" type="text" name="name" 
+                placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="div-group">
+                <label id="email-label" for="email">Email: </label>    
+                <input id="email" class="input-design input-effect" type="email" name="email" 
+                placeholder="Ingresa tu correo electronico" required>
+            </div>
+
+            <div class="div-group">
+                <label id="number-label" for="number">Number: </label>
+                <input id="number" class="input-design input-effect" type="number" name="numeroazar" min=1 max=100 
+                placeholder="Ingresa un numero entre 1 a 100" required>
+            </div>
+
+            <div class="div-group">
+                <label for="dropdown">Texto del menu seleccionable</label>
+                <select class="input-design input-effect" id="dropdown" name="seleccion" required>
+                    <option disabled selected value="">Seleccion algo de la lista</option>
+                    <option value="1" >Selecciona 1</option>
+                    <option value="2">Selecciona 2</option>
+                    <option value="3">Selecciona 3</option>
+                </select>
+            </div>
+
+            <div class="div-group">
+                <p>Selecciona una opcion</p>
+                <label><input name="menuopciones-radio" value="opcion1" type="radio">Opcion 1</label>
+                <label><input name="menuopciones-radio" value="opcion2" type="radio">Opcion 2</label>
+                <label><input name="menuopciones-radio" value="opcion3" type="radio">Opcion 3</label>
+            </div>
+
+            <div class="div-group">
+                <p>Caja de seleccion multiple</p>
+                <label><input name="checkbox-selec" value="seleccion1" type="checkbox">Seleccion caja 1</label>
+                <label><input name="checkbox-selec" value="seleccion2" type="checkbox">Seleccion caja 2</label>
+                <label><input name="checkbox-selec" value="seleccion3" type="checkbox">Seleccion caja 3</label>
+            </div>
+
+            <div class="div-group">
+                <p>Dejanos tus comentarios</p>
+                <textarea class="textarea-effect" id="comentarios" name="comentario" placeholder="Dejanos saber tus comentarios al respecto..." required></textarea>
+            </div>
+
+            <div class="div-group center-button">
+                <button class="design-button button-effect" id="submit" type="submit">Enviar formulario</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
